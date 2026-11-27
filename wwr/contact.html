@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting Company</title>
+    <meta name="description" content="Contact White Water Rafting Company: find our address, phone, email and map, or send us a message about trips and reservations.">
+    <meta name="author" content="Maria Sarmiento">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="White Water Rafting logo" width="80" height="80">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Company information -->
+        <div class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <address>
+                123 Main River Street<br>
+                Kolob, California<br>
+                <a href="tel:+19999999999">+1 999 999 9999</a><br>
+                <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+            </address>
+        </div>
+
+        <!-- Map (left) and contact form (right) -->
+        <div class="contact-grid">
+            <iframe class="map" src="https://maps.google.com/maps?q=Kolob%20Canyons&amp;z=11&amp;output=embed" title="Map showing the location of White Water Rafting Company" width="400" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <input type="radio" id="general" name="purpose" value="general" checked>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type here" required></textarea>
+
+                <div class="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </div>
+
+        <!-- Employee profiles -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <figure>
+                <img src="images/employee-guide.svg" alt="Profile picture of Carlos Rivera, Lead River Guide" width="200" height="200">
+                <figcaption>Carlos Rivera<br>Lead River Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee-reservations.svg" alt="Profile picture of Laura Méndez, Reservations Manager" width="200" height="200">
+                <figcaption>Laura Méndez<br>Reservations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee-safety.svg" alt="Profile picture of Andrés Torres, Safety Coordinator" width="200" height="200">
+                <figcaption>Andrés Torres<br>Safety Coordinator</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 White Water Rafting | Maria Sarmiento | WDD 130</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="images/social-share.svg" alt="Facebook" width="40" height="40"></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="images/social-photo.svg" alt="Instagram" width="40" height="40"></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener"><img src="images/social-video.svg" alt="YouTube" width="40" height="40"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
