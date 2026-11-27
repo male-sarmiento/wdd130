@@ -6,6 +6,8 @@
     --light-color: #ffffff;
     --section-bg: #eef7f1;
     --border-color: #a9cbb7;
+    --placeholder-color: #55655d;
+    --overlay-color: #ffffffcc;  /* white at 80% */
 }
 
 *,
@@ -85,7 +87,7 @@ header nav a:hover {
     width: 100%;
     text-align: center;
     color: var(--primary-color);
-    background-color: rgb(255 255 255 / 0.8);
+    background-color: var(--overlay-color);
     padding: 0.25rem 0;
 }
 
@@ -212,7 +214,7 @@ address a {
 }
 
 .contact-form ::placeholder {
-    color: #55655d;
+    color: var(--placeholder-color);
 }
 
 fieldset {
